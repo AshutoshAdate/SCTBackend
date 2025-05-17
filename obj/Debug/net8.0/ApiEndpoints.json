@@ -1,0 +1,126 @@
+[
+  {
+    "ContainingType": "SreeChintamaniTrustBackend.Controllers.ContactUsController",
+    "Method": "AddDevoteeContact",
+    "RelativePath": "api/ContactUs/adContact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "devoteeContact",
+        "Type": "SreeChintamaniTrustBackend.Models.DevoteeContact",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SreeChintamaniTrustBackend.Models.DevoteeContact",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SreeChintamaniTrustBackend.Controllers.DevoteeController",
+    "Method": "AddDevotee",
+    "RelativePath": "api/Devotee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "devotee",
+        "Type": "SreeChintamaniTrustBackend.Models.Devotee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SreeChintamaniTrustBackend.Models.Devotee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SreeChintamaniTrustBackend.Controllers.DevoteeController",
+    "Method": "GetUser",
+    "RelativePath": "api/Devotee/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SreeChintamaniTrustBackend.Models.Devotee",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SreeChintamaniTrustBackend.Controllers.DevoteeController",
+    "Method": "GetDevotees",
+    "RelativePath": "api/Devotee/GetAllDevotees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SreeChintamaniTrustBackend.Models.Devotee, SreeChintamaniTrustBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SreeChintamaniTrustBackend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRequest",
+        "Type": "SreeChintamaniTrustBackend.Models.DTO.UserRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Threading.Tasks.Task\u00601[[SreeChintamaniTrustBackend.Models.DTO.UserResponseDto, SreeChintamaniTrustBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
